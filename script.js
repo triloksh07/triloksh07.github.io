@@ -24,7 +24,7 @@ checkUidButton.addEventListener('click', () => {
     resultMessage.classList.remove('success', 'error');
 
     // Fetch UID data from the CSV file
-    fetch('Eligible Students List(Result).csv')
+    fetch('Eligible_Students_List_UPDATED_19_01_25.csv')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch the UID data');

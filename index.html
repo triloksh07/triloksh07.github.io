@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSPL'25 Elite Status</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="ecell.jpg" alt="E-Cell Logo">
+      <h2>Entrepreneurship Cell SGSITS</h2>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="uid-section" class="screen active">
+      <div class="card">
+        <h1 class="accent-text">GSPL'25</h1>
+        <h2>Check Your Elite Status</h2>
+        <input type="text" id="uid" placeholder="Enter Class Roll No.(1st Year) | Enrollment No.(Other)" class="input-box" required>
+        <button id="checkUid" class="btn">Check Result</button>
+      </div>
+    </div>
+
+    <div id="result-section" class="screen">
+      <div class="card">
+        <p id="resultMessage"></p>
+        <button onclick="location.reload()" class="btn">Start Over</button><br>
+        <!-- <span>To check detailed results:</span> -->
+        <button id="viewDetails" class="btn">View Detailed Results</button>
+        <div id="detailsSection" style="display: none;">
+          <!-- Table for detailed results will be populated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Evoke | Enterprise | Expand</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
